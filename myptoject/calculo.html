@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dynasty8 Imóveis</title>
+        <link rel="icon" href="icon.png">
+        <link rel="stylesheet" href="style2.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="logod"><img id="logoi" src="icon.png" width="50px"></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Menu</a></li>
+                    <li><a href="#">Cálculo</a></li>
+                    <li><a href="#">Á venda</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="title">
+                <h1>Responda para ver o valor!</h1>
+            </div>
+            <div>
+                <label class="q">
+                    <p>Quantos m² a casa possui?</p>
+                    <input type="number" class="c" id="m2">
+                </label>
+            </div>
+            <div>
+                <label class="q">
+                    <p>Quantos quartos a casa possui?</p>
+                    <input type="number" class="c" id="quartos">
+                </label>
+            </div>
+            <div>
+                <label class="q">
+                    <p>Quantos banheiros a casa possui?</p>
+                    <input type="number" class="c" id="banheiros">
+                </label>
+            </div>
+            <div>
+                <label class="q">
+                    <p>Quantos Km distante do centro?</p>
+                    <input type="number" class="c" id="distancia">
+                </label>
+            </div>
+            <div>
+                <label class="q">
+                    <p>Qual a idade da casa?</p>
+                    <input type="number" class="c" id="idade">
+                </label>
+            </div>
+            <div>
+                <p id="p">A casa têm garagem?</p>
+                <label class="q">
+                    <input type = "radio" name="garagem" value="1" id="garagemSim"> Sim
+                </label>
+                <label class="q">
+                    <input type = "radio" name="garagem" value="0" id="garagemNao"> Não
+                </label>
+            </div>
+            <div>
+                <button id="rslt" onclick="enviarDados()">Resultado</button>
+            </div>
+        </div>
+    </body>
+</html>

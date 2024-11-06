@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <title>Dynasty8 Imóveis</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h2>O resultado do cálculo é: </h2>
+        <p id="precoPrevisto">Carregando...</p>
+    </div>
+
+
+    <script>
+        // Recuperar o valor previsto do sessionStorage
+        const precoPrevisto = sessionStorage.getItem("preco_previsto");
+
+        // Formatar o valor como moeda com duas casas decimais
+        const precoFormatado = Number(precoPrevisto).toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL',
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+        });
+
+        // Exibir o valor no elemento HTML
+        document.getElementById("precoPrevisto").innerText = `Preço: ${precoFormatado} mil`;
+    </script>
+</body>
+</html>
