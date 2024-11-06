@@ -28,4 +28,6 @@ ________________________________________________________________________________
 
 4 - Open the folder "myproject" and double click "index.html", that will open the web application.
 
-* Click on "cálculo" in the site, that's where the form to get information is located at.
+* It's important to use the translation option of your browser because the original language of the site isn't english.
+
+* Click on "calculation" in the site, that's where the form to get information is located at.
